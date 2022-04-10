@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>الرئيسية</title>
+  <title>إنشاء حساب</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -25,7 +25,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style2.css" rel="stylesheet">
+  <link href="assets/css/form.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Squadfree - v4.7.0
@@ -47,44 +49,49 @@
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="login.html">تسجيل دخول</a></li>
-          <li><a class="nav-link scrollto" href="signup.html">إنشاء حساب</a></li>
-          
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+     
 
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
-      <h1>يمنحك فجوال القدرة للدخول في عالم المبدعين 
-        <br> كن منهم .. سجل الآن ! </h1>
-      <h2>منصتك العربية لمشاركة أعمالك المرئية واكتشاف أفضل الاعمال المطروحة من خلال أفضل المصممين</h2>
-      <a href="login.html" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
-    </div>
-  </section><!-- End Hero -->
-
+  
   <main id="main">
+    
+    <div class="main-container">
+      
+        <div class="right-container2"></div>
 
+        <div id="log-in" class="left-container log-in">
+          <h1 class="f1">  إنشاء حساب العميل</h1>
+          <p class="f2">مرحبا بك في فيجوال !</p>
+
+          <div style="width: 100%;">
+            <form action="index.html" class="signup-form f1">
+              <input type="email" id="name" placeholder="اسم المستخدم">
+              <input type="gender" id="name" placeholder="النوع">
+
+              <input type="email" id="email" placeholder="البريد الالكتروني">
+              <input type="password" id="password" placeholder="كلمة المرور">
+              <input type="password" id="password" placeholder="تأكيد كلمة المرور">
+              <input type="number" id="number" placeholder="رقم الهاتف">
+
+              <button type="submit" id="submit" class="button log-in-btn" disabled>إنشاء حساب</button>
+            </form>
+
+            
+          </div>
+          <div class="login-link-container">
+<a href="login.html"> <p  class="login-link f1"> ليدك حساب بالفعل ؟ تسجيل دخول !</p> </a>
+          </div>
+        </div>
+  
+      </div>
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-      <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Vigual</span></strong>. All Rights Reserved
-      </div>
-    
-    </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>

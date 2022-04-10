@@ -302,8 +302,8 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(rgba(1, 13, 19, 0.5), rgba(55, 142, 181, 0.2)), url("../img/bbg.jpg") top center;
+  height: 70vh;
+  background: linear-gradient(rgba(1, 13, 19, 0.5), rgba(55, 142, 181, 0.2)), url("../img/cover.png") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -417,215 +417,6 @@ section {
 
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background-color: #f8fbfd;
-  min-height: 40px;
-}
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: 300;
-}
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
-
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.3s ease-in-out;
-  border-radius: 8px;
-  z-index: 1;
-}
-.services .icon-box::before {
-  content: "";
-  position: absolute;
-  background: white;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 100%;
-  transition: all 0.3s;
-  z-index: -1;
-}
-.services .icon-box:hover::before {
-  background: #67b0d1;
-  top: 0;
-  border-radius: 0px;
-}
-.services .icon {
-  margin-bottom: 15px;
-}
-.services .icon i {
-  font-size: 48px;
-  line-height: 1;
-  color: #67b0d1;
-  transition: all 0.3s ease-in-out;
-}
-.services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-.services .title a {
-  color: #111;
-}
-.services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-.services .icon-box:hover .title a, .services .icon-box:hover .description {
-  color: #fff;
-}
-.services .icon-box:hover .icon i {
-  color: #fff;
-}
-
-
-/*--------------------------------------------------------------
-# Cta
---------------------------------------------------------------*/
-/* .cta {
-  background: linear-gradient(rgba(192, 209, 226, 0.8), rgba(51, 61, 65, 0.8)), url("../img/about-bg.jpg") fixed center center;
-  background-size: cover;
-  padding: 60px 0;
-} */
-.cta h3 {
-  color: #000;
-  font-size: 28px;
-  font-family: "cairo", sans-serif;
-  font-weight: 700;
-}
-.cta p {
-  color: #000;
-  font-family: "Almarai", sans-serif;
-
-}
-.cta .cta-btn {
-  font-family: "cairo", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 25px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #2D31FA;
-  color: #2D31FA;
-}
-.cta .cta-btn:hover {
-  border-color: #fff;
-}
-
-
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team .member {
-  text-align: center;
-  margin-bottom: 80px;
-  position: relative;
-}
-.team .member .pic {
-  overflow: hidden;
-}
-.team .member .member-info {
-  position: absolute;
-  top: 85%;
-  left: 20px;
-  right: 20px;
-  background: #fff;
-  padding: 20px 0;
-  color: #2f4d5a;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  max-height: 95px;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
-}
-.team .member:hover .member-info {
-  max-height: 300px;
-}
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #2f4d5a;
-  position: relative;
-  padding-bottom: 10px;
-}
-.team .member h4::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #b1cbd7;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-.team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-.team .member .social {
-  margin-top: 15px;
-}
-.team .member .social a {
-  transition: color 0.3s;
-  color: #52869d;
-}
-.team .member .social a:hover {
-  color: #67b0d1;
-}
-.team .member .social i {
-  font-size: 16px;
-  margin: 0 2px;
-}
-@media (max-width: 992px) {
-  .team .member {
-    margin-bottom: 110px;
-  }
-}
 
 
 /*--------------------------------------------------------------
@@ -670,3 +461,19 @@ section {
 .me-2 {
   margin-right: .5rem!important;
 }
+.card-body{
+font-family: 'cairo';
+}
+
+.card-body h5 {
+    font-family: 'cairo';
+    color: #000;
+    font-weight: 500;
+
+    }
+
+    .card-body h6 {
+        font-family: 'cairo';
+        color: #000;
+        }
+      
