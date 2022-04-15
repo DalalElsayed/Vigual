@@ -13,6 +13,8 @@
   <link href="assets/img/vicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+      
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -29,12 +31,7 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Squadfree - v4.7.0
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  
 </head>
 
 <body dir="rtl">
@@ -58,33 +55,55 @@
   
   <main id="main">
     
-    <div class="main-container">
+    <div class="row">
+      <div class="col-lg-12 col-md-6">
+        <form action="index.html" method="post">
+          <h2 class="t"> تسجيل حساب فريلانسر </h2>
+          
+          <fieldset>
+            
+                    
+            <label for="name">الاسم الاول :</label>
+            <input type="text" id="name" name="user_name">
+          
+            <label for="name">الاسم الاخير :</label>
+            <input type="text" id="name" name="user_name">
+
+            <label for="name">الجنسية  :</label>
+            <input type="text" id="name" name="user_name">
+
+            <label for="email">البريد الالكتروني :</label>
+            <input type="email" id="mail" name="user_email">
+         
+            <label for="password">الرقم السري :</label>
+            <input type="password" id="password"       name="user_password">
+
+            <label for="password">تأكيد الرقم السري :</label>
+            <input type="password" id="password"       name="user_password">
+          
+           
+            
+            <label for="password">رقم الحساب البنكي :</label>
+            <input type="number" id="password"       name="user_password">
+
+            <label for="email">تاريخ الميلاد :</label>
+            <input type="date" id="mail" name="user_email">
+  
+            <label for="email">رقم الهاتف :</label>
+            <input type="number" id="mail" name="user_email">
+
+            <label class="labeltitle">الجنس</label>
+            <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">ذكر</label><br>
+            <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">أنثى</label>
+            
+          </fieldset>
       
-        <div class="right-container2"></div>
-
-        <div id="log-in" class="left-container log-in">
-          <h1 class="f1">  إنشاء حساب العميل</h1>
-          <p class="f2">مرحبا بك في فيجوال !</p>
-
-          <div style="width: 100%;">
-            <form action="index.html" class="signup-form f1">
-              <input type="email" id="name" placeholder="اسم المستخدم">
-              <input type="gender" id="name" placeholder="النوع">
-
-              <input type="email" id="email" placeholder="البريد الالكتروني">
-              <input type="password" id="password" placeholder="كلمة المرور">
-              <input type="password" id="password" placeholder="تأكيد كلمة المرور">
-              <input type="number" id="number" placeholder="رقم الهاتف">
-
-              <button type="submit" id="submit" class="button log-in-btn" disabled>إنشاء حساب</button>
-            </form>
-          </div>
-          <div class="login-link-container">
-<a href="login.html"> <p  class="login-link f1"> ليدك حساب بالفعل ؟ تسجيل دخول !</p> </a>
+          <button  type="submit" id="submit" class="button log-in-btn" disabled>إنشاء حساب </button>
+        
+          </form>
           </div>
         </div>
-  
-      </div>
+        
 
   </main><!-- End #main -->
 
