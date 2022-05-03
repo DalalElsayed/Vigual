@@ -259,6 +259,8 @@ const changeToSignup = () => {
     }
   });
 
+  
+
   /**
    * Testimonials slider
    */

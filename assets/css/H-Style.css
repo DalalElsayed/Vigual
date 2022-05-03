@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Oswald&display=swap');
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -18,9 +19,45 @@ body {
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Oswald", sans-serif;
+    font-family: "cairo", sans-serif;
   }
   
+  
+/* Sections Header
+--------------------------------*/
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-family: 'Cairo', sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 30px;
+  color: #2f4d5a;
+  z-index: 2;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 122px;
+  height: 66px;
+  background: url(../img/section-title-bg.png) no-repeat;
+  z-index: -1;
+}
+.section-title p {
+  margin-bottom: 0;
+  font-family: 'Cairo', sans-serif;
+  font-size: 18px;
+
+}
+
+
 /* Dropdown menus */
 .dropdown-menu {
     border-radius: 4px;
@@ -321,6 +358,8 @@ body {
   }
   .sidebar-nav .nav-link:hover i {
     color: #4154f1;
+    background: #f6f9ff;
+
   }
   .sidebar-nav .nav-link .bi-chevron-down {
     margin-right: 0;
@@ -357,3 +396,107 @@ body {
   .sidebar-nav .nav-content a.active i {
     background-color: #4154f1;
   }
+
+
+/*--------------------------------------------------------------
+# projects Section
+--------------------------------------------------------------*/
+#projects {
+  padding: 80px 0;
+}
+#projects .project {
+  border: 1px solid #e0e5fa;
+  background: #fff;
+  margin-bottom: 30px;
+}
+#projects .project:hover .project-img img {
+  transform: scale(1.1);
+}
+#projects .project-img {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+#projects .project-img img {
+  transition: 0.3s ease-in-out;
+}
+#projects h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 0 20px;
+}
+#projects a {
+  color: #010310;
+}
+#projects a:hover {
+  color: #4154f1;
+}
+#projects .stars {
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+#projects .stars i {
+  color: #ffc31d;
+}
+#projects p {
+  padding: 0 20px;
+  margin-bottom: 10px;
+  color: #060c22;
+  font-style: italic;
+  font-size: 16px;
+}
+
+
+/* posts Section
+--------------------------------*/
+#testimonials {
+  padding: 80px 0;
+}
+#testimonials .profile {
+  text-align: center;
+}
+#testimonials .profile .pic {
+  border-radius: 50%;
+  border: 6px solid #fff;
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+  width: 260px;
+}
+#testimonials .profile .pic img {
+  max-width: 100%;
+}
+
+
+#testimonials .profile h4 {
+  font-weight: 700;
+  color: #03C4EB;
+  margin-bottom: 5px;
+}
+#testimonials .profile span {
+  color: #333333;
+}
+#testimonials .quote {
+  position: relative;
+  background: #fff;
+  padding: 60px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-style: italic;
+  border-radius: 5px;
+}
+#testimonials .quote b {
+  display: inline-block;
+  font-size: 22px;
+  left: -9px;
+  position: relative;
+  top: -8px;
+}
+#testimonials .quote small {
+  display: inline-block;
+  right: -9px;
+  position: relative;
+  top: 4px;
+}
+
+
