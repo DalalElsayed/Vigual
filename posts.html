@@ -34,71 +34,63 @@
 
 <body>
 
-   <!-- ======= Header ======= -->
-   <header id="header" class="header fixed-top d-flex align-items-center N">
+ <!-- ======= Header ======= -->
+ <header id="header" class="header fixed-top d-flex align-items-center N">
 
-    <div class="d-flex align-items-center justify-content-between">
-    
-      <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div>
-    <!-- End Logo -->
-    <nav class="header-nav ms-auto">
-      <ul class="d-flex  align-items-center">
-        <li class="nav-item ">
-          <a class="nav-link item" href="Taslem.html" > تسليم المشروع</a>
-        </li>
-        <!-- <li class="nav-item ">
-          <a class="nav-link item " href="#" >المزيد عننا</a>
-        </li> -->
-      </ul></nav>
-
-    <div class="search-bar">
-      <form class="search-form d-flex align-items-center" method="POST" action="#">
-        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
-        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-      </form>
-    </div><!-- End Search Bar -->
-
-    <nav class="header-nav ms-auto">
-      <ul class="d-flex  align-items-center">
+  <div class="d-flex align-items-center justify-content-between">
   
-        <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
-            <i class="bi bi-search"></i>
-          </a>
-        </li><!-- End Search Icon-->
+    <i class="bi bi-list toggle-sidebar-btn"></i>
+  </div>
+  <!-- End Logo -->
+  <nav class="header-nav ms-auto">
+    <ul class="d-flex  align-items-center">
+      <li class="nav-item ">
+        <a class="nav-link item" href="#" >تواصل معنا</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link item " href="#" >المزيد عننا</a>
+      </li></ul></nav>
 
-        <li class="nav-item dropdown">
+  <div class="search-bar">
+    <form class="search-form d-flex align-items-center" method="POST" action="#">
+      <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+      <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+    </form>
+  </div><!-- End Search Bar -->
 
-          <a class="nav-link nav-icon" href="posts.html" >
-            <i class="bi bi-shop-window"></i>
-              </a><!-- End Notification Icon -->
+  <nav class="header-nav ms-auto">
+    <ul class="d-flex  align-items-center">
 
-        </li><!-- End Notification Nav -->
+      <li class="nav-item d-block d-lg-none">
+        <a class="nav-link nav-icon search-bar-toggle " href="#">
+          <i class="bi bi-search"></i>
+        </a>
+      </li><!-- End Search Icon-->
 
-        <li class="nav-item dropdown">
+      <li class="nav-item dropdown">
 
-          <a class="nav-link nav-icon" href="#" >
-            <i class="bi bi-chat-square-dots-fill"></i>
-          </a><!-- End Messages Icon -->
+        <a class="nav-link nav-icon" href="posts.html" >
+          <i class="bi bi-shop-window"></i>
+                  </a><!-- End Notification Icon -->
 
-        </li><!-- End Messages Nav -->
-        
-        <li class="nav-item dropdown pe-3">
+      </li><!-- End Notification Nav -->
 
-          <a class="nav-link nav-icon " href="Edit_Profile.html" >
-            <i class="bi bi-pencil-square"></i>
-          </a>
-        </li><!-- End Profile Nav -->
 
-      </ul>
-    </nav><!-- End Icons Navigation -->
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="Home.html" class="logo d-flex align-items-center">
-        <img src="assets/img/Vlogo.png"  alt=" logo">
-      </a>
-    </div>
-  </header><!-- End Header -->
+      <li class="nav-item dropdown pe-3">
+
+        <a class="nav-link nav-icon " href="Freelancer_Profile.html" >
+          <i class="bi bi-person-fill"></i>
+        </a>
+      </li><!-- End Profile Nav -->
+
+    </ul>
+  </nav><!-- End Icons Navigation -->
+  <div class="d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/Vlogo.png"  alt=" logo">
+    </a>
+  </div>
+</header><!-- End Header -->
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar" dir="rtl">
 
@@ -176,6 +168,11 @@
       </li><!-- End motion Nav -->
 
     </ul>
+    <div class="sidenav-footer position-absolute w-100 bottom-0 ">
+      <div class="mx-5">
+        <a class="btn bg-danger mb-3 w-100 text-white" href="#" type="button">تسجيل خروج</a>
+      </div>
+    </div>
 
   </aside><!-- End Sidebar-->
 
@@ -201,10 +198,34 @@
           <div class="row">
             <div class="col-md-3">
               <div class="profile">
-                <div class="pic"><img src="assets/img/pp.jpg" alt=""></div>
+                <a href="Client_Profile.html"><div class="pic"><img src="assets/img/profile-img.jpg" alt=""></div></a>
                 <h4> اسم العميل</h4>
-                <a href="Client_Profile.html"><i class="bi bi-person-fill"></i>
-                </a>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="quote">
+                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group mb-4">
+                      <label for="text">كتابة مشروع </label>
+                      <textarea rows="3" class="form-control" id="text">
+                      </textarea>
+                  </div>
+              </div>
+                <br>
+                <div class="d-flex justify-content-center pt-3">
+                    <button type="button" class="btn btn-light btn-m ms-2"> نشر </button>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="profile">
+                <a href="Client_Profile.html"><div class="pic"><img src="assets/img/pp.jpg" alt=""></div></a>
+                <h4> اسم العميل</h4>
               </div>
             </div>
             <div class="col-md-9">
@@ -223,34 +244,10 @@
           </div>
   
           <div class="row">
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="assets/img/quote_sign_left.png" alt=""></b>
-                تصميم منزل مكون من 4 غرف وبع ملحق صغير وحديقة خارجية وتصميم واجهة وجراج للسيارة
-                <small><img src="assets/img/quote_sign_right.png" alt=""></small>
-                <br>
-                <div class="d-flex justify-content-center pt-3">
-                    <a href="posts_destails.html"><button type="button" class="btn btn-light btn-m ms-2"> المزيد </button></a>
-                  </div>
-              </div>
-            </div>
             <div class="col-md-3">
               <div class="profile">
-                <div class="pic"><img src="assets/img/profile-img.jpg" alt=""></div>
-                <h4>اسم العميل</h4>
-                <a href="Client_Profile.html"><i class="bi bi-person-fill"></i>
-                </a>
-                </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic"><img src="assets/img/pp.jpg" alt=""></div>
+                <a href="Client_Profile.html"><div class="pic"><img src="assets/img/profile-img.jpg" alt=""></div></a>
                 <h4> اسم العميل</h4>
-                <a href="Client_Profile.html"><i class="bi bi-person-fill"></i>
-                </a>
               </div>
             </div>
             <div class="col-md-9">
@@ -267,6 +264,29 @@
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="profile">
+                <a href="Client_Profile.html"><div class="pic"><img src="assets/img/pp.jpg" alt=""></div></a>
+                <h4> اسم العميل</h4>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="assets/img/quote_sign_left.png" alt=""></b> 
+تصميم براندينج كامل خاص بشركة عطور .. تصميم الكروت واللوجو والاقلام والبوك مارك  
+                <small><img src="assets/img/quote_sign_right.png" alt=""></small>
+                <br>
+                <div class="d-flex justify-content-center pt-3">
+                    <a href="posts_destails.html"><button type="button" class="btn btn-light btn-m ms-2"> المزيد </button></a>
+                  </div>
+
+
+              </div>
+            </div>
+          </div>
+      
   
         </div>
       </section><!-- End posts Section -->
