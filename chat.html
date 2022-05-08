@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Client Profile</title>
+  <title> الرسائل </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -30,6 +30,9 @@
   <link href="assets/css/p-style.css" rel="stylesheet">
   <link href="assets/css/H-Style.css" rel="stylesheet">
 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
 </head>
 
 <body>
@@ -45,11 +48,12 @@
     <nav class="header-nav ms-auto">
       <ul class="d-flex  align-items-center">
         <li class="nav-item ">
-          <a class="nav-link item" href="#" >تواصل معنا</a>
+          <a class="nav-link item" href="#" > تسليم المشروع</a>
         </li>
-        <li class="nav-item ">
+        <!-- <li class="nav-item ">
           <a class="nav-link item " href="#" >المزيد عننا</a>
-        </li></ul></nav>
+        </li> -->
+      </ul></nav>
 
     <div class="search-bar">
       <form class="search-form d-flex align-items-center" method="POST" action="#">
@@ -66,29 +70,21 @@
             <i class="bi bi-search"></i>
           </a>
         </li><!-- End Search Icon-->
-
         <li class="nav-item dropdown">
 
-          <a class="nav-link nav-icon" href="posts.html" >
-            <i class="bi bi-shop-window"></i>
-              </a><!-- End posts Icon -->
-
-        </li><!-- End posts Nav -->
-
-        <li class="nav-item dropdown">
-
-          <a class="nav-link nav-icon" href="chat.html" >
-            <i class="bi bi-chat-square-dots-fill"></i>
-          </a><!-- End Messages Icon -->
-
-        </li><!-- End Messages Nav -->
-        
-        <li class="nav-item dropdown pe-3">
-
-          <a class="nav-link nav-icon " href="#" >
-            <i class="bi bi-person-fill"></i>
-          </a>
-        </li><!-- End Profile Nav -->
+            <a class="nav-link nav-icon" href="posts.html" >
+              <i class="bi bi-shop-window"></i>
+                </a><!-- End posts Icon -->
+  
+          </li><!-- End posts Nav -->
+  
+          <li class="nav-item dropdown">
+  
+            <a class="nav-link nav-icon" href="form.html" >
+                <i class="bi bi-info-square-fill"></i>
+                        </a><!-- End Messages Icon -->
+  
+          </li><!-- End Messages Nav -->
 
       </ul>
     </nav><!-- End Icons Navigation -->
@@ -182,86 +178,70 @@
     </div>
   </aside><!-- End Sidebar-->
 
-  <main id="main" dir="rtl">
-  
-    <div class="container">
-		<div class="main-body">
-			<div class="row">
-                
-				<div class="col-lg-4">
-					<div class="card">
-						<div class="card-body">
-							<div class="d-flex flex-column align-items-center text-center">
-								<img src="/assets/img/pp.jpg" alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
-								<div class="mt-3">
-									<h4>User Name</h4>
-									<p class="text-muted font-size-sm">Egypt, Alexandria</p>
-                                    <button type="submit" class="btn btn-primary">Follow</button>
-                                    <button type="submit" class="btn btn-outline-primary">Message</button>
-									<hr class="my-4">
-									<p class="text-muted font-size-sm">Rating</p>
-									<div class="star">
-										<input type="radio" name="rate">
-										<input type="radio" name="rate">
-										<input type="radio" name="rate">
-										<input type="radio" name="rate">
-										<input type="radio" name="rate">
-									  </div>
-								</div>
-							</div>
-						
-			
-						</div>
-					</div>
-				</div>
-                
-				<div class="col-lg-8">
-					<div class="card">
-					
-					</div>
+  <main id="main" >
 
-                    <div class="row" id="about">
-						<div class="col-m-12">
-							<div class="card">
-								<div class="card-body">
-									<h5 class="d-flex align-items-center mb-3">مشروع 1 </h5>
-									<p>مطلوب مصمم جرافيك .....</p>
-                                </div>
+  <div class="container">
+<div class="row clearfix">
+    <div class="col-lg-12">         
+            <div class="chat">
+                <div class="chat-header clearfix">
+                    <div class="row ">
+                        <div class="col-lg-12" >
+                          
+                            <div class="chat-about">
+                                <h6 class="m-b-0">user name</h6>
+                                <small>آخر ظهور : منذ ساعتين</small>
                             </div>
-                            <div class="card">
-								<div class="card-body">
-									<h5 class="d-flex align-items-center mb-3">مشروع 2 </h5>
-									<p>مطلوب مصمم جرافيك .....</p>
-                                </div>
-                            </div>
-                            <div class="card">
-								<div class="card-body">
-									<h5 class="d-flex align-items-center mb-3">مشروع 3 </h5>
-									<p>مطلوب مصمم جرافيك .....</p>
-                                </div>
-                            </div>
-                            <div class="card">
-								<div class="card-body">
-									<h5 class="d-flex align-items-center mb-3">مشروع 4 </h5>
-									<p>مطلوب مصمم جرافيك .....</p>
-                                </div>
-                            </div>
-                            <div class="card">
-								<div class="card-body">
-									<h5 class="d-flex align-items-center mb-3">مشروع 5 </h5>
-									<p>مطلوب مصمم جرافيك .....</p>
-                                </div>
-                            </div>
+                            <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
+                                <img src="/assets/img/pp.jpg" alt="avatar">
+                            </a>
                         </div>
+                        <!-- <div class="col-lg-6 hidden-sm text-right">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a>
+                        </div> -->
                     </div>
-
-					
-				</div>
-			</div>
-		</div>
-	</div>
-
-
+                </div>
+                <div class="chat-history ">
+                    <ul class="m-b-0">
+                        <li class="clearfix">
+                            <div class="message-data text-right">
+                                <span class="message-data-time">اليوم , 10:10 ص</span>
+                                <img src="/assets/img/profile-img.jpg" alt="avatar">
+                            </div>
+                            <div class="message other-message float-right"> السلام عليكم .. كم يوما متبقي على إنتهاء المشروع ؟ </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="message-data">
+                                <span class="message-data-time">اليوم , 10:12 ص</span>
+                            </div>
+                            <div class="message my-message">وعليكم السلام .. يمكنني الانتهاء منه في خلال يومين </div>                                    
+                        </li>                               
+                        <li class="clearfix">
+                            <div class="message-data">
+                                <span class="message-data-time">اليوم , 10:15 ص</span>
+                            </div>
+                            <div class="message my-message">وسأقوم بإرسال ما تم الانتهاء منه حتى الآن</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chat-message clearfix">
+                    <div class="input-group mb-0">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-send"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="ادخل رسالتك هنا">                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    
+ 
 
   </main><!-- End #main -->
 
