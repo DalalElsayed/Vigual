@@ -413,100 +413,166 @@ section {
 
 
 /*--------------------------------------------------------------
-# About
+# Features
 --------------------------------------------------------------*/
-.about {
-  background: url("../img/about-bg.jpg") center center no-repeat;
-  background-size: cover;
-  padding: 60px 0;
-  position: relative;
+.features .content + .content {
+  margin-top: 100px;
 }
-.about::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.75);
-  z-index: 9;
-}
-.about .container {
-  position: relative;
-  z-index: 10;
-}
-.about .content {
-  padding: 30px 30px 30px 0;
-}
-.about .content h3 {
-  font-weight: 700;
-  font-family: 'Cairo', sans-serif;
-  font-size: 34px;
-  color: #2f4d5a;
-  margin-bottom: 30px;
-}
-.about  h4 {
+
+.features .content h3 {
   font-weight: 600;
-  font-family: 'Cairo', sans-serif;
-  font-size: 22px;
-  color: #2f4d5a;
-  margin-bottom: 30px;
+  font-size: 26px;
+  font-family: 'Cairo';
+
 }
-.about .content p {
-  margin-bottom: 30px;
-  font-family: 'Cairo', sans-serif;
-  font-size: 18px;
+
+.features .content ul {
+  list-style: none;
+  padding: 0;
+  font-family: 'Cairo';
 }
-.dots{
-  font-family: 'Cairo', sans-serif;
-  font-size: 16px;
+
+.features .content ul li {
+  padding-bottom: 10px;
 }
-.dots2{
-  font-family: 'Cairo', sans-serif;
-  font-size: 18px;
-}
-.about .content .about-btn {
-  display: inline-block;
-  background: #67b0d1;
-  padding: 6px 44px 8px 30px;
-  color: #fff;
-  border-radius: 50px;
-  transition: 0.3s;
-  position: relative;
-}
-.about .content .about-btn i {
-  font-size: 18px;
-  position: absolute;
-  right: 18px;
-  top: 9px;
-}
-.about .content .about-btn:hover {
-  background: #7bbad7;
-}
-.about .icon-boxes .icon-box {
-  margin-top: 30px;
-}
-.about .icon-boxes .icon-box i {
-  font-size: 40px;
-  color: #67b0d1;
-  margin-bottom: 10px;
-}
-.about .icon-boxes .icon-box h4 {
+
+.features .content ul i {
   font-size: 20px;
+  padding-right: 4px;
+  color: #3b4ef8;
+}
+
+.features .content p:last-child {
+  margin-bottom: 0;
+  font-family: 'Cairo';
+
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info-box {
+  color: #2d405f;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #3b4ef8;
+  padding: 8px;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
   font-weight: 700;
-  margin: 0 0 10px 0;
+  margin: 10px 0;
 }
-.about .icon-boxes .icon-box p {
-  font-size: 15px;
-  color: #848484;
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
 }
-@media (max-width: 1200px) {
-  .about .content {
-    padding-right: 0;
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  background: #fff;
+  font-family: 'cairo';
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #8ea5ca;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #3b4ef8;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #0a22f6;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
-@media (max-width: 768px) {
-  .about {
-    text-align: center;
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
